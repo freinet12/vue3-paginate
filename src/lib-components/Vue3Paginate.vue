@@ -80,6 +80,7 @@
 </template>
 
 <script>
+import { emitter } from '@/bus'
 export default {
     name: 'Vue3Paginate',
     props: {
@@ -209,8 +210,8 @@ export default {
     },
 
     mounted(){
-        this.emitter.on('btnClicked', this.handleBtnClicked)
-        this.emitter.emit('gotTotalPages', this.totalNumPages)
+        emitter.on('btnClicked', this.handleBtnClicked)
+        emitter.emit('gotTotalPages', this.totalNumPages)
     },
 
     methods: {
@@ -234,7 +235,7 @@ export default {
             let page = 1
             this.theCurrentPage = page
             this.$emit('input', this.theCurrentPage)
-            this.emitter.emit('pageChanged', this.theCurrentPage)
+            emitter.emit('pageChanged', this.theCurrentPage)
         },
         onClickPreviousPage() {
             let page = this.getPage(this.theCurrentPage - 1)
@@ -242,7 +243,7 @@ export default {
                 page.isActive = true
                 this.theCurrentPage = page.number
                 this.$emit('input', this.theCurrentPage)
-                this.emitter.emit('pageChanged', this.theCurrentPage)
+                emitter.emit('pageChanged', this.theCurrentPage)
             }
             
         },
@@ -250,7 +251,7 @@ export default {
             this.theCurrentPage = page.number
             page.isActive = true
             this.$emit('input', this.theCurrentPage)
-            this.emitter.emit('pageChanged', this.theCurrentPage)
+            emitter.emit('pageChanged', this.theCurrentPage)
         },
         onClickNextPage() {
             let page = this.getPage(this.theCurrentPage + 1)
@@ -258,14 +259,14 @@ export default {
                 page.isActive = true
                 this.theCurrentPage = page.number
                 this.$emit('input', this.theCurrentPage)
-                this.emitter.emit('pageChanged', this.theCurrentPage)
+                emitter.emit('pageChanged', this.theCurrentPage)
             }
         },
         onClickLastPage() {
             let page = this.totalNumPages
             this.theCurrentPage = page
             this.$emit('input', this.theCurrentPage)
-            this.emitter.emit('pageChanged', this.theCurrentPage)
+            emitter.emit('pageChanged', this.theCurrentPage)
         },
         
         getPage(num){

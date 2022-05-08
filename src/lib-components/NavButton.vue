@@ -9,6 +9,7 @@
 </template>
 
 <script>
+import { emitter } from '@/bus'
 export default {
   name: 'NavButton',
   props: {
@@ -50,8 +51,8 @@ export default {
     }
   },
   mounted(){
-    this.emitter.on('pageChanged', this.handlePageChange)
-    this.emitter.on('gotTotalPages', this.setTotalPages)
+    emitter.on('pageChanged', this.handlePageChange)
+    emitter.on('gotTotalPages', this.setTotalPages)
     this.initShouldDisable()
   },
 
@@ -60,7 +61,7 @@ export default {
       this.totalPages = total
     },
     handleClick(){
-      this.emitter.emit('btnClicked', this.page)
+      emitter.emit('btnClicked', this.page)
     },
     handlePageChange(page){
       const first = ['first', 'First']
