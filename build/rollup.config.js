@@ -12,8 +12,6 @@ import { terser } from 'rollup-plugin-terser';
 import ttypescript from 'ttypescript';
 import typescript from 'rollup-plugin-typescript2';
 import minimist from 'minimist';
-import mitt from 'mitt';
-const emitter = mitt();
 
 // Get browserslist config and remove ie from es build targets
 const esbrowserslist = fs.readFileSync('./.browserslistrc')
@@ -76,6 +74,8 @@ const external = [
   // list external dependencies, exactly the way it is written in the import statement.
   // eg. 'jquery'
   'vue',
+  'mitt',
+  'tailwindcss/tailwind.css'
 ];
 
 // UMD/IIFE shared settings: output.globals
