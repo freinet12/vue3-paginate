@@ -7,6 +7,10 @@
   "module": "dist/vue3-paginate.esm.js",
   "unpkg": "dist/vue3-paginate.min.js",
   "types": "dist/types/src/entry.esm.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/freinet12/vue3-paginate.git"
+  },
   "files": [
     "dist/*",
     "src/**/*.vue"
