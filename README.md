@@ -131,6 +131,12 @@ npm i -S @brutforce/vue3-paginate
   The slots allow you to add a fully customized NavButton component. See the example above.
   `first, prev, next, last`
 
+  #### Events
+  The Paginate component emits the following event(s).
+  | Name | Description
+  ----- | ----- |
+  |input | This `input` event is fired every time a button on the paginator is clicked. The current page is sent with the event. Simply provide a method to catch the input event. See the example above.
+
 <hr>
 
 ### NavButton
