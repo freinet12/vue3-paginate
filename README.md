@@ -142,7 +142,7 @@ npm i -S @brutforce/vue3-paginate
   |Name |  Type  | Required  | Description
   ----- | -----  | -----  | -----  |
   |text | String | false | The text that should be displayed on the button. Alternatively, you can supply your own html instead using slots. See the 'Prev' and 'Next' NavButtons in the exmple above. |
-  | page | [String | Number] | true | The page name/number to be displayed. ie `first`, `prev`, `next`, `last` |
+  | page | String `|` Number | true | The page name/number to be displayed. ie `first`, `prev`, `next`, `last` |
   | isFirst | Boolean | false | Used to determine if the 'First' button should be disabled. <br> <strong>Default: false </strong> . This is calculated internally by default |
   | isPrev | Boolean | false | Used to determine if the 'Prev' button should be disabled. <br> <strong>Default: false </strong> . This is calculated internally by default |
   | isNext | Boolean | false | Used to determin if the 'Next' button should be disabled. <br> <strong>Default: false </strong> . This is calculated internally by default |
