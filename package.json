@@ -1,6 +1,6 @@
 {
   "name": "@brutforce/vue3-paginate",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "",
   "main": "dist/vue3-paginate.ssr.js",
   "browser": "dist/vue3-paginate.esm.js",
