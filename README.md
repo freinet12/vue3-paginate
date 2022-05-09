@@ -131,6 +131,7 @@ npm i -S @brutforce/vue3-paginate
   The slots allow you to add a fully customized NavButton component. See the example above.
   `first, prev, next, last`
 
+<hr>
 
 ### NavButton
 <p>The NavButton component is used to navigate through the pages by clicking 'First', 'Prev', 'Next', and 'Last'</p>
