@@ -110,42 +110,42 @@ npm i -S @brutforce/vue3-paginate
   ### Paginate
   <p> The Paginate component is the main component whic handles all of the pagination logic </p>
 
-    #### Props
+  #### Props
 
-    Here is a list of all the props for the Paginate component.
+  Here is a list of all the props for the Paginate component.
 
-    |Name |    Type | Required | Description
-    ------ | ----- | ----- | ----- |
-    |  maxPages   |   Number   |   false   |   The maximum number of pages to display at once. <br><strong> Default: 3</strong>  |
-    |  perPage    |   Number | false | The number of items displayed per page. <br><strong> Default: 5</strong> |
-    |  totalPages   |   Number   | false | The total number of pages to paginate. <br><strong> Default: 10</strong> |
-    |  currentPage   |   Number   | false | The current page. <br><strong> Default: 1</strong> |
-    |  showFirstLast  |   Boolean   | false | Specifies is the 'First' and 'Last' buttons should be displayed. <br><strong> Default: true</strong> |
-    |  wrapperClasses |   String   | false | A string of Tailwind classes for styling the component's main wrapper element. <br><strong> Default: </strong> `'shadow-md border-1 rounded-lg'` |
-    | dotClasses | String | false | A string of Tailwind classes for styling the dots ("...") before and after the allowed maxPages range. <br><strong>Default: </strong> `px-3 py-auto cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-indigo-300 focus:border-indigo-400'`|
-    | activePageClasses | String | false | A string of Tailwind classes for styling the active page button. <br><strong> Default: </strong> `'bg-indigo-500 hover:bg-indigo-600 text-white'` |
-    | pageClasses | String | false | A string of Tailwind classes for styling the page number buttons. <br><strong>Default: </strong> `'px-2 sm:px-4 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-300 focus:border-indigo-400 hover:bg-gray-100'` |
+  |Name |    Type | Required | Description
+  ------ | ----- | ----- | ----- |
+  |  maxPages   |   Number   |   false   |   The maximum number of pages to display at once. <br><strong> Default: 3</strong>  |
+  |  perPage    |   Number | false | The number of items displayed per page. <br><strong> Default: 5</strong> |
+  |  totalPages   |   Number   | false | The total number of pages to paginate. <br><strong> Default: 10</strong> |
+  |  currentPage   |   Number   | false | The current page. <br><strong> Default: 1</strong> |
+  |  showFirstLast  |   Boolean   | false | Specifies is the 'First' and 'Last' buttons should be displayed. <br><strong> Default: true</strong> |
+  |  wrapperClasses |   String   | false | A string of Tailwind classes for styling the component's main wrapper element. <br><strong> Default: </strong> `'shadow-md border-1 rounded-lg'` |
+  | dotClasses | String | false | A string of Tailwind classes for styling the dots ("...") before and after the allowed maxPages range. <br><strong>Default: </strong> `px-3 py-auto cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-indigo-300 focus:border-indigo-400'`|
+  | activePageClasses | String | false | A string of Tailwind classes for styling the active page button. <br><strong> Default: </strong> `'bg-indigo-500 hover:bg-indigo-600 text-white'` |
+  | pageClasses | String | false | A string of Tailwind classes for styling the page number buttons. <br><strong>Default: </strong> `'px-2 sm:px-4 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-300 focus:border-indigo-400 hover:bg-gray-100'` |
 
-    #### Named Slots
-    The following slots are used for the navigation buttons (First, Previous, Next, Last).
-    The slots allow you to add a fully customized NavButton component. See the example above.
-    `first, prev, next, last`
+  #### Named Slots
+  The following slots are used for the navigation buttons (First, Previous, Next, Last).
+  The slots allow you to add a fully customized NavButton component. See the example above.
+  `first, prev, next, last`
 
 
 ### NavButton
 <p>The NavButton component is used to navigate through the pages by clicking 'First', 'Prev', 'Next', and 'Last'</p>
 
-    #### Props
-    Here is a list of props for the NavButton component.
+  #### Props
+  Here is a list of props for the NavButton component.
 
-    |Name |  Type  | Required  | Description
-    ----- | -----  | -----  | -----  |
-    |text | String | false | The text that should be displayed on the button. Alternatively, you can supply your own html instead using slots. See the 'Prev' and 'Next' NavButtons in the exmple above. |
-    | page | [String | Number] | true | The page name/number to be displayed. ie `first`, `prev`, `next`, `last` |
-    | isFirst | Boolean | false | Used to determine if the 'First' button should be disabled. <br> <strong>Default: false </strong> . This is calculated internally by default |
-    | isPrev | Boolean | false | Used to determine if the 'Prev' button should be disabled. <br> <strong>Default: false </strong> . This is calculated internally by default |
-    | isNext | Boolean | false | Used to determin if the 'Next' button should be disabled. <br> <strong>Default: false </strong> . This is calculated internally by default |
-    | isLast | Boolean | false | Used to determin if the 'Last' button should be disabled. <br> <strong>Default: false </strong> . This is calculated internally by default |
+  |Name |  Type  | Required  | Description
+  ----- | -----  | -----  | -----  |
+  |text | String | false | The text that should be displayed on the button. Alternatively, you can supply your own html instead using slots. See the 'Prev' and 'Next' NavButtons in the exmple above. |
+  | page | [String | Number] | true | The page name/number to be displayed. ie `first`, `prev`, `next`, `last` |
+  | isFirst | Boolean | false | Used to determine if the 'First' button should be disabled. <br> <strong>Default: false </strong> . This is calculated internally by default |
+  | isPrev | Boolean | false | Used to determine if the 'Prev' button should be disabled. <br> <strong>Default: false </strong> . This is calculated internally by default |
+  | isNext | Boolean | false | Used to determin if the 'Next' button should be disabled. <br> <strong>Default: false </strong> . This is calculated internally by default |
+  | isLast | Boolean | false | Used to determin if the 'Last' button should be disabled. <br> <strong>Default: false </strong> . This is calculated internally by default |
 
     
 
