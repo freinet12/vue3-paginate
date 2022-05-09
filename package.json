@@ -17,7 +17,9 @@
     "vue-paginate",
     "vue 3 paginator",
     "tailwindcss",
-    "vue tailwind"
+    "vue tailwind",
+    "vue3-paginate",
+    "vue3-tw-paginate"
   ],
   "files": [
     "dist/*",
