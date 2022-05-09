@@ -11,6 +11,14 @@
     "type": "git",
     "url": "https://github.com/freinet12/vue3-paginate.git"
   },
+  "keywords": [
+    "vue",
+    "vue 3",
+    "vue-paginate",
+    "vue 3 paginator",
+    "tailwindcss",
+    "vue tailwind"
+  ],
   "files": [
     "dist/*",
     "src/**/*.vue"
