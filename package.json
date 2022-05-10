@@ -11,6 +11,7 @@
     "type": "git",
     "url": "https://github.com/freinet12/vue3-paginate.git"
   },
+  "license": "MIT",
   "keywords": [
     "vue",
     "vue 3",
