@@ -2,6 +2,8 @@
   <b>Vue3 Paginate</b> is a very simple Pagination component for Vue 3 and TailwindCSS.
 </p>
 
+<img src="https://fb-test-images.s3.amazonaws.com/v3-paginate-img.PNG" />
+
 
 ## ⚙️ Installation
 
